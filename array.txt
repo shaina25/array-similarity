@@ -1,0 +1,16 @@
+T = int(input())
+for i in range(T):
+    l = int(input())
+    ls1 = list(map(int,input().split()))
+    ls2 = list(map(int,input().split()))
+    ls1.sort()
+    ls2.sort()
+    flag = 0
+    for i in range(l):
+        if(ls1[i] != ls2[i]):
+            flag = 1
+            
+    if(flag == 1):
+        print(0)
+    else:
+        print(1)"# array-similarity" 
